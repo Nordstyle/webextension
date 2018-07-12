@@ -1,0 +1,21 @@
+#message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color:white;
+  background: linear-gradient(160deg, #32067c, #150233);
+  padding: 0.2rem 2rem;
+}
+#message__close {
+  font-size: 1.4rem;
+  color:white;
+  cursor: pointer;
+  margin-right: 40px;
+  user-select: none;
+}
