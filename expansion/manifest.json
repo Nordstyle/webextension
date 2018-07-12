@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "SOFTOMATE expansion",
+  "version": "1.1",
+  "description": "Test task for Front-end developer",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "background"
+  ],
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "background": {
+    "matches": [ "<all_urls>" ],
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "SOFTOMATE expansion",
+    "default_popup": "popup/main_popup.html"
+  },
+  "content_scripts": [
+    {
+        "matches": [ "<all_urls>" ],
+        "js": [ "content_scripts/content.js" ],
+        "css": [ "content_scripts/content.css" ],
+        "run_at": "document_end"
+    }
+  ]
+}
